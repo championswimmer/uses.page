@@ -1,6 +1,17 @@
 # Draft API 
 > (not fully specced but a reference to go by)
 
+## Frontend
+
+### `/` 
+- landing page 
+
+### `/@username` 
+- an user's uses page 
+
+### `/discover` 
+- discover pages of all users
+
 ## Backend [API]
 Base URL for the following paths are `/api/v1`
 

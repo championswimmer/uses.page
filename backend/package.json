@@ -1,0 +1,36 @@
+{
+  "name": "uses-page-backend",
+  "version": "1.0.0",
+  "description": "Backend for https://uses.page ",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/server.js",
+    "test": "ts-jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/championswimmer/uses.page.git"
+  },
+  "author": "Arnav Gupta <championswimmer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/championswimmer/uses.page/issues"
+  },
+  "homepage": "https://github.com/championswimmer/uses.page#readme",
+  "dependencies": {
+    "better-sqlite3": "^9.6.0",
+    "class-validator": "^0.14.1",
+    "express": "^4.19.2",
+    "jest": "^29.7.0",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.1.0",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
