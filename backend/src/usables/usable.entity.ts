@@ -25,7 +25,6 @@ export class Usable extends BaseEntity {
   brand!: string
 
   @Column({
-    type: 'enum',
     enum: UsableType,
     default: UsableType.SOFTWARE,
   })
@@ -45,7 +44,6 @@ export class Usable extends BaseEntity {
   price?: number
 
   @Column({
-    type: 'enum',
     enum: UsablePricePeriod,
     nullable: true
   })

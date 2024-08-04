@@ -4,7 +4,9 @@ import {
   Column,
   Unique,
   BaseEntity,
+  OneToMany,
 } from 'typeorm'
+import { UserUsable } from '../usables/user-usable.entity'
 
 @Entity({ name: 'users' })
 export class User extends BaseEntity {
@@ -19,6 +21,9 @@ export class User extends BaseEntity {
 
   @Column()
   password!: string
+
+  @OneToMany(() => UserUsable, (userUsable: UserUsable) => userUsable.user)
+  usables!: UserUsable[]
 
   toJSON() {
     return { ...this, password: undefined }
